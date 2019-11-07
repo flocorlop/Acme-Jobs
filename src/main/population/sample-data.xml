@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- - sample-data.xml - - Copyright (c) 2019 Rafael Corchuelo. - - In keeping with the traditional purpose of furthering education and 
+	research, it is - the policy of the copyright owner to permit non-commercial use and redistribution of - this software. It has been tested 
+	carefully, but it is not guaranteed for any particular - purposes. The copyright owner does not offer any warranties or representations, 
+	nor do - they accept any liabilities with respect to them. -->
+
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<import resource="conversion-service.xml" />
+
+	<!-- Shouts -->
+
+	<bean id="shout01" class="acme.entities.shouts.Shout">
+		<property name="author" value="John Doe" />
+		<property name="text" value="I'm happy!" />
+		<property name="moment" value="2019/09/09 10:00" />
+	</bean>
+
+	<bean id="shout02" class="acme.entities.shouts.Shout">
+		<property name="author" value="Jane Doe" />
+		<property name="text" value="I'm the master of my room!" />
+		<property name="moment" value="2019/08/09 15:55" />
+	</bean>
+
+	<bean id="shout03" class="acme.entities.shouts.Shout">
+		<property name="author" value="Foo Bar" />
+		<property name="text" value="I'm 20..." />
+		<property name="moment" value="2019/09/07 00:00" />
+	</bean>
+
+	<bean id="shout04" class="acme.entities.shouts.Shout">
+		<property name="author" value="Peter McCain" />
+		<property name="text" value="Where am I?" />
+		<property name="moment" value="2019/04/05 17:25" />
+	</bean>
+
+	<bean id="shout05" class="acme.entities.shouts.Shout">
+		<property name="author" value="Tony Montana" />
+		<property name="text" value="Who put this thing together?" />
+		<property name="moment" value="2019/07/26 20:19" />
+	</bean>
+
+	<bean id="shout06" class="acme.entities.shouts.Shout">
+		<property name="author" value="Freddy Krueger" />
+		<property name="text" value="You can check in, but you can't check out" />
+		<property name="moment" value="2019/02/17 05:14" />
+	</bean>
+
+	<bean id="shout07" class="acme.entities.shouts.Shout">
+		<property name="author" value="Julián Pérez" />
+		<property name="text" value="¿Qué es esto?" />
+		<property name="moment" value="2019/09/09 03:14" />
+	</bean>
+
+	<bean id="shout08" class="acme.entities.shouts.Shout">
+		<property name="author" value="Juan Carlos Serrano" />
+		<property name="text" value="Mi primer Shout" />
+		<property name="moment" value="2019/10/09 11:00" />
+	</bean>
+
+	<bean id="shout09" class="acme.entities.shouts.Shout">
+		<property name="author" value="Stefan Parker" />
+		<property name="text" value="I'm looking for a Job" />
+		<property name="moment" value="2019/09/09 11:00" />
+	</bean>
+
+	<bean id="shout10" class="acme.entities.shouts.Shout">
+		<property name="author" value="Antonio Jesus" />
+		<property name="text" value="Pero madre mia Willy que haces aqui compañero" />
+		<property name="moment" value="2019/09/09 05:44" />
+	</bean>
+
+	<bean id="shout11" class="acme.entities.shouts.Shout">
+		<property name="author" value="Monolo 72" />
+		<property name="text" value="Buenas!!" />
+		<property name="moment" value="2019/10/09 10:00" />
+	</bean>
+
+	<bean id="shout12" class="acme.entities.shouts.Shout">
+		<property name="author" value="Peter Parker" />
+		<property name="text" value="I'm Spiderman" />
+		<property name="moment" value="2019/09/09 12:15" />
+	</bean>
+
+
+	<!-- CaballeroBulletins -->
+
+	<bean id="caballeroBulletin01" class="acme.entities.caballeroBulletins.CaballeroBulletin">
+		<property name="author" value="Michael Myers" />
+		<property name="text" value="..." />
+		<property name="moment" value="2018/10/31 23:59" />
+	</bean>
+
+	<bean id="caballeroBulletin02" class="acme.entities.caballeroBulletins.CaballeroBulletin">
+		<property name="author" value="Jimmy" />
+		<property name="text" value="I like that!" />
+		<property name="moment" value="2019/04/09 18:35" />
+	</bean>
+
+	<bean id="caballeroBulletin03" class="acme.entities.caballeroBulletins.CaballeroBulletin">
+		<property name="author" value="Chuck" />
+		<property name="text" value="I see your point" />
+		<property name="moment" value="2019/09/12 19:45" />
+	</bean>
+
+
+	<!-- CorreaBulletin -->
+	<bean id="correaBulletin01" class="acme.entities.correaBulletins.CorreaBulletin">
+		<property name="author" value="J.J" />
+		<property name="text" value="New shout" />
+		<property name="moment" value="2019/09/09 23:15" />
+	</bean>
+
+	<bean id="correaBulletin02" class="acme.entities.correaBulletins.CorreaBulletin">
+		<property name="author" value="R.L" />
+		<property name="text" value="Fashion victim" />
+		<property name="moment" value="2019/09/10 23:15" />
+	</bean>
+
+
+	<!-- GranjaBulletin -->
+
+	<bean id="granjaBulletin01" class="acme.entities.granjaBulletins.GranjaBulletin">
+		<property name="author" value="Monolo 72" />
+		<property name="text" value="Buenas!!" />
+		<property name="moment" value="2019/10/09 10:00" />
+	</bean>
+
+	<bean id="granjaBulletin02" class="acme.entities.granjaBulletins.GranjaBulletin">
+		<property name="author" value="Peter Parker" />
+		<property name="text" value="I'm Spiderman" />
+		<property name="moment" value="2019/09/09 12:15" />
+	</bean>
+
+	<!-- MoranteBulletin -->
+	<bean id="moranteBulletin01" class="acme.entities.moranteBulletins.MoranteBulletin">
+		<property name="author" value="Monolo 72" />
+		<property name="text" value="Buenas!!" />
+		<property name="moment" value="2019/10/09 10:00" />
+	</bean>
+
+	<bean id="moranteBulletin02" class="acme.entities.moranteBulletins.MoranteBulletin">
+		<property name="author" value="Tony Stark" />
+		<property name="text" value="Friday, what time is it?" />
+		<property name="moment" value="2019/09/09 12:15" />
+	</bean>
+
+	<!-- Announcements -->
+
+	<bean id="announcement01" class="acme.entities.announcements.Announcement">
+		<property name="title" value="Announcement Sample 1" />
+		<property name="text" value="I'm happy!" />
+		<property name="moreInfo">
+			<null />
+		</property>
+		<property name="moment" value="2019/09/09 10:00" />
+	</bean>
+
+	<bean id="announcement02" class="acme.entities.announcements.Announcement">
+		<property name="title" value="Announcement Sample 2" />
+		<property name="text" value="I'm the master of my room!" />
+		<property name="moreInfo" value="http://www.example.com" />
+		<property name="moment" value="2019/08/09 15:55" />
+	</bean>
+
+	<bean id="announcement03" class="acme.entities.announcements.Announcement">
+		<property name="title" value="Announcement Sample 3" />
+		<property name="text" value="I'm 20..." />
+		<property name="moreInfo" value="http://www.example.com" />
+		<property name="moment" value="2019/09/07 00:00" />
+	</bean>
+
+	<bean id="announcement04" class="acme.entities.announcements.Announcement">
+		<property name="title" value="Tony Stark" />
+		<property name="moment" value="2019/09/09 12:15" />
+		<property name="moreInfo" value="https://github.com/angcabdom/Acme-Jobs" />
+		<property name="text" value="Friday, what time is it?" />
+	</bean>
+
+	<bean id="announcement05" class="acme.entities.announcements.Announcement">
+		<property name="title" value="Tony Stark 2" />
+		<property name="moment" value="2019/09/09 10:15" />
+		<property name="moreInfo">
+			<null />
+		</property>
+		<property name="text" value="Friday, what time hfghf is it?" />
+	</bean>
+
+	<bean id="announcement06" class="acme.entities.announcements.Announcement">
+		<property name="title" value="Ejemplo de anuncio 1" />
+		<property name="moment" value="2019/10/09 10:00" />
+		<property name="moreInfo">
+			<null />
+		</property>
+		<property name="text" value="Descripción de un anuncio" />
+	</bean>
+
+	<bean id="announcement07" class="acme.entities.announcements.Announcement">
+		<property name="title" value="Anuncio 2" />
+		<property name="moment" value="2019/10/23 12:15" />
+		<property name="moreInfo" value="http://www.google.es" />
+		<property name="text" value="Descripción de un anuncio" />
+	</bean>
+
+	<!-- Offers -->
+
+	<bean id="offer01" class="acme.entities.offers.Offer">
+		<property name="title" value="Sample offer 1" />
+		<property name="ticker" value="OACBA-00001" />
+		<property name="moment" value="2019/09/09 12:15" />
+		<property name="deadline" value="2019/12/09 10:00" />
+		<property name="text" value="Description sample" />
+		<property name="moneyMin" value="€ 700" />
+		<property name="moneyMax" value="€ 1000" />
+	</bean>
+
+	<bean id="offer02" class="acme.entities.offers.Offer">
+		<property name="title" value="Sample offer 2" />
+		<property name="ticker" value="OCAAA-01002" />
+		<property name="moment" value="2019/10/09 10:00" />
+		<property name="deadline" value="2019/12/09 12:15" />
+		<property name="text" value="This is a sample of the description of an offer" />
+		<property name="moneyMin" value="€ 750" />
+		<property name="moneyMax" value="€ 1000" />
+	</bean>
+
+	<!-- CompanyRecords -->
+	<bean id="CompanyRecord01" class="acme.entities.companyRecords.CompanyRecord">
+		<property name="name" value="Google" />
+		<property name="sector" value="Tecnológico" />
+		<property name="ceo" value="Sundar Pichai" />
+		<property name="activities" value="Desarrollo y mantenimiento de aplicaciones web" />
+		<property name="webSite" value="https://www.google.com" />
+		<property name="phone" value="+183 (1436) 1937403629" />
+		<property name="email" value="google@google.com" />
+		<property name="incorporated" value="True" />
+		<property name="stars" value="5" />
+	</bean>
+
+	<bean id="CompanyRecord02" class="acme.entities.companyRecords.CompanyRecord">
+		<property name="name" value="Intel" />
+		<property name="sector" value="Tecnológico" />
+		<property name="ceo" value="Bob Swan" />
+		<property name="activities" value="Desarrollo y producción de hardware" />
+		<property name="webSite" value="https://www.intel.es/content/www/es/es/homepage.html" />
+		<property name="phone" value="036295" />
+		<property name="email" value="intel@intel.com" />
+		<property name="incorporated" value="True" />
+		<property name="stars" value="4" />
+	</bean>
+
+	<!-- Challenges -->
+
+	<bean id="challenge01" class="acme.entities.challenges.Challenge">
+		<property name="title" value="Sample challenge 1" />
+		<property name="deadline" value="2019/12/09 10:00" />
+		<property name="description" value="Description sample" />
+		<property name="goalGold" value="Terminar en una semana" />
+		<property name="rewardGold" value="Algo muy bonito" />
+		<property name="goalSilver" value="Terminar en dos semana" />
+		<property name="rewardSilver" value="Algo bonito" />
+		<property name="goalBronze" value="Terminar justo en el plazo" />
+		<property name="rewardBronze" value="Algo más o menos bonito" />
+	</bean>
+
+	<bean id="challenge02" class="acme.entities.challenges.Challenge">
+		<property name="title" value="Sample challenge reloaded" />
+		<property name="deadline" value="2019/12/09 10:00" />
+		<property name="description" value="Description sample with originality" />
+		<property name="goalGold" value="Terminar en una semana" />
+		<property name="rewardGold" value="Algo muy bonito" />
+		<property name="goalSilver" value="Terminar en dos semana" />
+		<property name="rewardSilver" value="Algo bonito" />
+		<property name="goalBronze" value="Terminar justo en el plazo" />
+		<property name="rewardBronze" value="Algo más o menos bonito" />
+	</bean>
+
+	<!-- InvestorRecords -->
+	<bean id="investorRecord01" class="acme.entities.investorRecords.InvestorRecord">
+		<property name="name" value="Rafa" />
+		<property name="sector" value="Banking" />
+		<property name="statement" value="The investing statement 01" />
+		<property name="stars" value="3" />
+	</bean>
+
+	<bean id="investorRecord02" class="acme.entities.investorRecords.InvestorRecord">
+		<property name="name" value="Carmen" />
+		<property name="sector" value="Technology" />
+		<property name="statement" value="The investing statement 02" />
+		<property name="stars" value="4" />
+	</bean>
+
+	<bean id="investorRecord03" class="acme.entities.investorRecords.InvestorRecord">
+		<property name="name" value="John" />
+		<property name="sector" value="Tourism" />
+		<property name="statement" value="The investing statement 03" />
+		<property name="stars" value="1" />
+	</bean>
+
+	<!--  Request_  -->
+<bean id="request01" class="acme.entities.requests_.Request_">
+<property name= "title" value="Trabajo de fontanero"/>
+<property name= "moment" value="2019/09/09 10:15"/>
+<property name= "dateLimit" value="2019/11/28 10:30"/>
+<property name= "text" value="lfdksjghd"/>
+<property name= "money" value="€ 1000"/>
+<property name= "ticker" value="RXXXX-99109"/>
+</bean>
+
+<bean id="request02" class="acme.entities.requests_.Request_">
+<property name= "title" value="Trabajo de fontanero2"/>
+<property name= "moment" value="2019/09/09 10:14"/>
+<property name= "dateLimit" value="2019/11/28 10:36"/>
+<property name= "text" value="lfdksjghdfdgf"/>
+<property name= "money" value="€ 750"/>
+<property name= "ticker" value="RXXXX-99119"/>
+</bean>
+    
+	<!-- Configuration -->
+	<bean id="configuration01" class="acme.entities.configuration.Configuration">
+		<property name="title" value="Configuration" />
+		<property name="spamThreshold" value="1.0" />
+		<property name="spamWords">
+			<list>
+				<value>sex</value>
+				<value>hard core</value>
+				<value>viagra</value>
+				<value>nigeria</value>
+				<value>you´ve won</value>
+				<value>million dollar</value>
+				<value>sexo</value>
+				<value>núcleo duro</value>
+				<value>has ganado</value>
+				<value>millón de dólares</value>
+			</list>
+		</property>
+	</bean>
+
+</beans>
+
