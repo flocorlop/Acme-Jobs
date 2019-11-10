@@ -81,6 +81,16 @@ public class AdministratorInvestorRecordCreateService implements AbstractCreateS
 		 * entity.setMoment(moment);
 		 * this.repository.save(entity);
 		 */
+		String name = entity.getName();
+		entity.setName(name);
+		String sector = entity.getSector();
+		entity.setSector(sector);
+		String statement = entity.getStatement();
+		entity.setStatement(statement);
+		Integer stars = entity.getStars();
+		entity.setStars(stars);
+
+		this.repository.save(entity);
 	}
 
 }

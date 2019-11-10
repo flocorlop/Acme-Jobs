@@ -46,6 +46,11 @@ master.menu.anonymous.javi-link = Enlace de Javi
 master.menu.anonymous.angel-link = Enlace de Ángel
 master.menu.anonymous.flor-link = Enlace de Flor
 
+
+master.menu.investorRecords = Inversiones
+master.menu.investor-records = Mostrar inversiones
+master.menu.investor-records.create = Crea una inversión
+
 # master.menu.authenticated ###################################################
 
 master.menu.announcement = Anuncios

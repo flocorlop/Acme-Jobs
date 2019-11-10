@@ -50,7 +50,8 @@ master.menu.company-record = Company record
 master.menu.company-records = Show company records
 
 master.menu.investorRecords = Investor Records
-master.menu.investor-records = Investor Records
+master.menu.investor-records = Show Investor Records
+master.menu.investor-records.create = Create Investor Records
 
 # master.menu.authenticated ###################################################
 

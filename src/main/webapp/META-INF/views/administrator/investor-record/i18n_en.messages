@@ -13,12 +13,14 @@ administrator.investor-record.list.label.sector = Sector
 administrator.investor-record.list.label.statement = Statement
 
 
-administrator.investor-record.form.label.name = Title:
-administrator.investor-record.form.label.sector = Name:
+administrator.investor-record.form.label.name = Name:
+administrator.investor-record.form.label.sector = Sector:
 administrator.investor-record.form.label.statement = Statement:
 administrator.investor-record.form.label.stars = Stars:
 
 ## botones ##
+
+administrator.investor-record.form.button.create = Create
 administrator.investor-record.form.button.update = Update
 administrator.investor-record.form.button.delete = Delete
 

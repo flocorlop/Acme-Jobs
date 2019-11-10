@@ -80,6 +80,7 @@
 			<acme:menu-suboption code="master.menu.announcements" action="/administrator/announcement/list"/>
 			<acme:menu-separator/>
 			<acme:menu-suboption code="master.menu.investor-records" action="/administrator/investor-record/list"/>
+			<acme:menu-suboption code="master.menu.investor-records.create" action="/administrator/investor-record/create"/>
 			<acme:menu-separator/>
 			<acme:menu-suboption code="master.menu.administrator.user-accounts" action="/administrator/user-account/list"/>
 			<acme:menu-separator/>
