@@ -50,7 +50,8 @@ master.menu.company-record = Company record
 master.menu.company-records = Show company records
 
 master.menu.investorRecords = Investor Records
-master.menu.investor-records = Investor Records
+master.menu.investor-records = Show Investor Records
+master.menu.investor-records.create = Create Investor Records
 
 # master.menu.authenticated ###################################################
 
@@ -134,4 +135,4 @@ master.license.text = \
 	"JSESSIONID" to identify your work session, "remember" to let you authenticate \
 	automatically for a maximum of 31 days, and "language" to store your language \
 	preferences. Additionally, we store an item called "returnStack" in your browser's \
-
+	
