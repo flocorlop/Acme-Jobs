@@ -78,6 +78,7 @@
 
 		<acme:menu-option code="master.menu.administrator" access="hasRole('Administrator')">
 			<acme:menu-suboption code="master.menu.announcements" action="/administrator/announcement/list"/>
+			<acme:menu-suboption code="master.menu.announcements.create" action="/administrator/announcement/create"/>
 			<acme:menu-separator/>
 			<acme:menu-suboption code="master.menu.investor-records" action="/administrator/investor-record/list"/>
 			<acme:menu-suboption code="master.menu.investor-records.create" action="/administrator/investor-record/create"/>
