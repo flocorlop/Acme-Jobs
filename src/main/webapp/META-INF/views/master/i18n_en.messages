@@ -60,6 +60,7 @@ master.menu.announcements = Show announcements
 
 master.menu.offer = Offers
 master.menu.offers = Show offers
+master.menu.offers.create = Create offers 
 
 master.menu.request_ = Request
 master.menu.requests_ = Show Requests

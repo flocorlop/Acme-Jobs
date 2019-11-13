@@ -19,5 +19,9 @@ authenticated.offer.form.label.text = Text:
 authenticated.offer.form.label.ticker = Ticker:
 authenticated.offer.form.label.moneyMin = Minimun Payment:
 authenticated.offer.form.label.moneyMax = Maximun Payment:
+
+
+authenticated.offer.form.button.create = Create
+
 authenticated.offer.form.button.return = Return
 
