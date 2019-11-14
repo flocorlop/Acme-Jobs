@@ -57,6 +57,7 @@ master.menu.investor-records.create = Create Investor Records
 
 master.menu.announcement = Announcements
 master.menu.announcements = Show announcements
+master.menu.announcements.create = Create Announcement
 
 master.menu.offer = Offers
 master.menu.offers = Show offers
