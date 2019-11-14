@@ -10,7 +10,6 @@ import acme.entities.offers.Offer;
 import acme.framework.components.Errors;
 import acme.framework.components.Model;
 import acme.framework.components.Request;
-import acme.framework.datatypes.Money;
 import acme.framework.entities.Authenticated;
 import acme.framework.services.AbstractCreateService;
 
@@ -74,8 +73,8 @@ public class AuthenticatedOfferCreateService implements AbstractCreateService<Au
 	@Override
 	public void create(final Request<Offer> request, final Offer entity) {
 
-		assert request != null;
-		assert entity != null;
+		//		assert request != null;
+		//		assert entity != null;
 
 		Date moment;
 		moment = new Date(System.currentTimeMillis() - 1);
@@ -83,23 +82,23 @@ public class AuthenticatedOfferCreateService implements AbstractCreateService<Au
 
 		//"title", "deadline", "ticker", "moneyMin", "moneyMax", "text"
 
-		String title = entity.getTitle();
-		entity.setTitle(title);
-
-		Date deadline = entity.getDeadline();
-		entity.setDeadline(deadline);
-
-		String ticker = entity.getTicker();
-		entity.setTicker(ticker);
-
-		Money moneyMin = entity.getMoneyMin();
-		entity.setMoneyMin(moneyMin);
-
-		Money moneyMax = entity.getMoneyMax();
-		entity.setMoneyMin(moneyMax);
-
-		String text = entity.getText();
-		entity.setText(text);
+		//		String title = entity.getTitle();
+		//		entity.setTitle(title);
+		//
+		//		Date deadline = entity.getDeadline();
+		//		entity.setDeadline(deadline);
+		//
+		//		String ticker = entity.getTicker();
+		//		entity.setTicker(ticker);
+		//
+		//		Money moneyMin = entity.getMoneyMin();
+		//		entity.setMoneyMin(moneyMin);
+		//
+		//		Money moneyMax = entity.getMoneyMax();
+		//		entity.setMoneyMin(moneyMax);
+		//
+		//		String text = entity.getText();
+		//		entity.setText(text);
 
 		this.repository.save(entity);
 
