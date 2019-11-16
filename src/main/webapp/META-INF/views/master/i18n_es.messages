@@ -62,6 +62,7 @@ master.menu.offers = Mostrar ofertas
 
 master.menu.request_ = Solicitudes
 master.menu.requests_ = Mostrar Solicitudes
+master.menu.requests_.create = Crear Solicitudes
 
 master.menu.company-record = Registros de empresas
 master.menu.company-records = Mostrar registros de empresas

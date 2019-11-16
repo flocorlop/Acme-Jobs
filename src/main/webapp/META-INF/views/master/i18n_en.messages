@@ -65,6 +65,7 @@ master.menu.offers.create = Create offers
 
 master.menu.request_ = Request
 master.menu.requests_ = Show Requests
+master.menu.requests_.create = Create Requests
 
 master.menu.challenge = Challenges
 master.menu.challenges = Show challenges
