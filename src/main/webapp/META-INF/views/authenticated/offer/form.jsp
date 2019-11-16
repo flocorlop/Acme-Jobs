@@ -16,9 +16,9 @@
 	<acme:form-textbox code="authenticated.offer.form.label.moneyMin" path="moneyMin" />
 	<acme:form-textbox code="authenticated.offer.form.label.moneyMax" path="moneyMax" />
 
-	<acme:form-submit test="${command == 'create' }" 
-	code="authenticated.offer.form.button.create" 
-	action="/authenticated/offer/create" />
+	<acme:form-checkbox code="authenticated.offer.label.accept" path="accept" />
+
+	<acme:form-submit test="${command == 'create' }" code="authenticated.offer.form.button.create" action="/authenticated/offer/create" />
 
 	<acme:form-return code="authenticated.offer.form.button.return" />
 </acme:form>
