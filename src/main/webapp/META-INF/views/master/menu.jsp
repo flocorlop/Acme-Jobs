@@ -63,10 +63,6 @@
 			<acme:menu-suboption code="master.menu.offers" action="/authenticated/offer/list"/>
 		</acme:menu-option>
 		
-		<acme:menu-option code="master.menu.request_" access="isAuthenticated()">
-			<acme:menu-suboption code="master.menu.requests_" action="/authenticated/request_/list"/>
-		</acme:menu-option>
-		
 		<acme:menu-option code="master.menu.challenge" access="isAuthenticated()">
 			<acme:menu-suboption code="master.menu.challenges" action="/authenticated/challenge/list"/>
 		</acme:menu-option>
@@ -92,6 +88,11 @@
 			<acme:menu-suboption code="master.menu.provider.javi-link" action="https://www.youtube.com/?hl=es&gl=ES"/>
 			<acme:menu-suboption code="master.menu.provider.angel-link" action="https://myanimelist.net/"/>
             <acme:menu-suboption code="master.menu.provider.flor-link" action="https://www.xataka.com/"/>
+		</acme:menu-option>
+		
+		<acme:menu-option code="master.menu.request_" access="hasRole('Provider')">
+			<acme:menu-suboption code="master.menu.requests_" action="/authenticated/request_/list"/>
+			<acme:menu-suboption code="master.menu.requests_.create" action="/authenticated/request_/create"/>
 		</acme:menu-option>
 
 		<acme:menu-option code="master.menu.consumer" access="hasRole('Consumer')">
