@@ -8,6 +8,7 @@ import org.springframework.stereotype.Service;
 
 import acme.entities.offers.Offer;
 import acme.framework.components.Errors;
+import acme.framework.components.HttpMethod;
 import acme.framework.components.Model;
 import acme.framework.components.Request;
 import acme.framework.entities.Authenticated;
@@ -46,6 +47,12 @@ public class AuthenticatedOfferCreateService implements AbstractCreateService<Au
 		assert model != null;
 
 		request.unbind(entity, model, "title", "deadline", "ticker", "moneyMin", "moneyMax", "text");
+
+		if (request.isMethod(HttpMethod.GET)) {
+			model.setAttribute("accept", "false");
+		} else {
+			request.transfer(model, "accept");
+		}
 	}
 
 	@Override
@@ -67,7 +74,9 @@ public class AuthenticatedOfferCreateService implements AbstractCreateService<Au
 		 * that a range is sequential, that a ticker is unique,
 		 * or that an amount of money is positive and its currency is EUR.
 		 */
-
+		boolean isAccepted;
+		isAccepted = request.getModel().getBoolean("accept");
+		errors.state(request, isAccepted, "accept", "authenticated.offer.error.must-accept");
 	}
 
 	@Override
