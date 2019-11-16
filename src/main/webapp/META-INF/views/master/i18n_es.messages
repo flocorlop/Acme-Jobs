@@ -55,6 +55,7 @@ master.menu.investor-records.create = Crea una inversión
 
 master.menu.announcement = Anuncios
 master.menu.announcements = Mostrar anuncios
+master.menu.announcements.create = Crear Anuncio
 
 master.menu.offer = Ofertas
 master.menu.offers = Mostrar ofertas

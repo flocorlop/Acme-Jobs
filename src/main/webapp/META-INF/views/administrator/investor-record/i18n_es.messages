@@ -18,5 +18,10 @@ administrator.investor-record.form.label.sector = Sector:
 administrator.investor-record.form.label.statement = Hoja de inversión:
 administrator.investor-record.form.label.stars = Estrellas:
 
+
+administrator.investor-record.form.button.create = Crear
+administrator.investor-record.form.button.update = Actualizar
+administrator.investor-record.form.button.delete = Borrar
+
 administrator.investor-record.form.button.return = Volver
 
