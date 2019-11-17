@@ -77,6 +77,9 @@ master.menu.administrator.shutdown = Parar el sistema
 master.menu.configuration = Configuración
 master.menu.configurations = Configuraciones
 
+master.menu.challenge.list = Listar Retos
+master.menu.challenge.form = Mostrar Retos
+
 # master.menu.provider ########################################################
 
 master.menu.provider = Proveedor

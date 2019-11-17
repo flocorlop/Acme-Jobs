@@ -76,6 +76,9 @@ master.menu.administrator.shutdown = Shut down
 master.menu.configuration = Configuration
 master.menu.configurations = Configurations
 
+master.menu.challenge.list = List Challenges
+master.menu.challenge.form = Show Challenges
+
 # master.menu.provider ########################################################
 
 master.menu.provider = Provider
