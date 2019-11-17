@@ -18,23 +18,13 @@
 
 <tiles-definitions>
 
-	<definition name="authenticated/announcement/list" extends="master">		
-		<put-attribute name="body" type="template" value="../authenticated/announcement/list.jsp" />
+	<definition name="administrator/company-record/list" extends="master">		
+		<put-attribute name="body" type="template" value="../administrator/company-record/list.jsp" />
 	</definition>
 	
-	<definition name="authenticated/announcement/form" extends="master">		
-		<put-attribute name="body" type="template" value="../authenticated/announcement/form.jsp" />
+	<definition name="administrator/company-record/form" extends="master">		
+		<put-attribute name="body" type="template" value="../administrator/company-record/form.jsp" />
 	</definition>
 
-    <definition name="anonymous/announcement/list" extends="master">		
-		<put-attribute name="body" type="template" value="../authenticated/announcement/list.jsp" />
-	</definition>
-	
-	<definition name="anonymous/announcement/form" extends="master">		
-		<put-attribute name="body" type="template" value="../authenticated/announcement/form.jsp" />
-	</definition>
-	
-	
-	
 </tiles-definitions> 
 

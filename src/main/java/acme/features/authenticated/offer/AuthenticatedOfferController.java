@@ -24,6 +24,9 @@ public class AuthenticatedOfferController extends AbstractController<Authenticat
 	@Autowired
 	private AuthenticatedOfferShowService	showService;
 
+	@Autowired
+	private AuthenticatedOfferCreateService	createService;
+
 
 	//	Constructors -------------
 
@@ -31,5 +34,6 @@ public class AuthenticatedOfferController extends AbstractController<Authenticat
 	private void initalise() {
 		super.addBasicCommand(BasicCommand.LIST, this.listService);
 		super.addBasicCommand(BasicCommand.SHOW, this.showService);
+		super.addBasicCommand(BasicCommand.CREATE, this.createService);
 	}
 }

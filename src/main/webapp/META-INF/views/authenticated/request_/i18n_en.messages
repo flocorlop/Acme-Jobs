@@ -14,6 +14,8 @@ authenticated.request_.form.label.dateLimit = Date Limit
 authenticated.request_.form.label.text = Text
 authenticated.request_.form.label.money = Money
 authenticated.request_.form.label.ticker = Ticker
+anonymous.user-account.label.accept = Confirm
+authenticated.request_.form.button.create = Create
 authenticated.request_.form.button.return = Return
 
 authenticated.request_.list.label.title = Title

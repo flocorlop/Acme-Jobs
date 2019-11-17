@@ -6,6 +6,7 @@ import org.springframework.stereotype.Service;
 
 import acme.entities.investorRecords.InvestorRecord;
 import acme.framework.components.Errors;
+import acme.framework.components.HttpMethod;
 import acme.framework.components.Model;
 import acme.framework.components.Request;
 import acme.framework.entities.Administrator;
@@ -44,6 +45,12 @@ public class AdministratorInvestorRecordCreateService implements AbstractCreateS
 		assert model != null;
 
 		request.unbind(entity, model, "name", "sector", "statement", "stars");
+
+		if (request.isMethod(HttpMethod.GET)) {
+			model.setAttribute("accept", "false");
+		} else {
+			request.transfer(model, "accept");
+		}
 	}
 
 	@Override
@@ -65,14 +72,16 @@ public class AdministratorInvestorRecordCreateService implements AbstractCreateS
 		 * that a range is sequential, that a ticker is unique,
 		 * or that an amount of money is positive and its currency is EUR.
 		 */
-
+		boolean isAccepted;
+		isAccepted = request.getModel().getBoolean("accept");
+		errors.state(request, isAccepted, "accept", "administrator.investor-record.error.must-accept");
 	}
 
 	@Override
 	public void create(final Request<InvestorRecord> request, final InvestorRecord entity) {
 
-		assert request != null;
-		assert entity != null;
+		//		assert request != null;
+		//		assert entity != null;
 		/*
 		 * ejemplo
 		 * Date moment;
@@ -81,14 +90,14 @@ public class AdministratorInvestorRecordCreateService implements AbstractCreateS
 		 * entity.setMoment(moment);
 		 * this.repository.save(entity);
 		 */
-		String name = entity.getName();
-		entity.setName(name);
-		String sector = entity.getSector();
-		entity.setSector(sector);
-		String statement = entity.getStatement();
-		entity.setStatement(statement);
-		Integer stars = entity.getStars();
-		entity.setStars(stars);
+		//		String name = entity.getName();
+		//		entity.setName(name);
+		//		String sector = entity.getSector();
+		//		entity.setSector(sector);
+		//		String statement = entity.getStatement();
+		//		entity.setStatement(statement);
+		//		Integer stars = entity.getStars();
+		//		entity.setStars(stars);
 
 		this.repository.save(entity);
 	}

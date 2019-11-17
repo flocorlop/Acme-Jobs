@@ -24,5 +24,9 @@ administrator.investor-record.form.button.create = Create
 administrator.investor-record.form.button.update = Update
 administrator.investor-record.form.button.delete = Delete
 
+
+administrator.investor-record.label.accept = Accept 
+administrator.investor-record.error.must-accept = Must accept 
+
 administrator.investor-record.form.button.return = Return
 
