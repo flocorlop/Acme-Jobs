@@ -56,7 +56,6 @@
 			<acme:menu-suboption code="master.menu.announcement.list" action="/anonymous/announcement/list" />
 		</acme:menu-option>
 
-
 		<!---------------------------- AUTHENTICATED  ---------------------------------->
 		<acme:menu-option code="master.menu.announcements" access="isAuthenticated()">
 			<acme:menu-suboption code="master.menu.announcement.list" action="/authenticated/announcement/list" />

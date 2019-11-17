@@ -67,9 +67,11 @@ master.menu.offers = Offers
 master.menu.offer.list = List Offers
 master.menu.offer.create = Create Offers 
 
+
 master.menu.requests_ = Request
 master.menu.request_.list = List Requests
 master.menu.request_.create = Create Request
+
 
 master.menu.challenges = Challenges
 master.menu.challenge.list = List Challenges
