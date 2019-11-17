@@ -27,48 +27,54 @@ master.menu.sign-in = Entrar
 master.menu.sign-out = Salir
 
 # master.menu.anonymous #######################################################
+master.menu.favouriteslinks = Links favoritos
 
-master.menu.anonymous = Anónimo
-master.menu.shout = Gritar
-master.menu.shouts = Gritos
-master.menu.create = Crear Grito
-master.menu.bulletin = Boletines
+master.menu.shouts = Shouts
+master.menu.shout.list = Mostrar Shouts
+master.menu.shout.create = Crear Shout
+
+master.menu.bulletins = Boletines
 master.menu.caballero-bulletins = Caballero Boletínes
 master.menu.caballero-bulletin.create = Crear un Caballero Boletín
 master.menu.correa-bulletins = Correa Boletines
 master.menu.correa-bulletin.create = Crear un Correa Bolentin
-master.menu.morante-bulletins = MoranteBoletines
-master.menu.morante-bulletin.create = Crear MoranteBoletin
+master.menu.morante-bulletins = Morante Boletines
+master.menu.morante-bulletin.create = Crear Morante Boletin
 master.menu.granja-bulletins = Granja Boletines
 master.menu.granja-bulletin.create = Crear un Granja Bolentin
+
 master.menu.anonymous.favourite-link = Enlace favorito
 master.menu.anonymous.javi-link = Enlace de Javi
 master.menu.anonymous.angel-link = Enlace de Ángel
 master.menu.anonymous.flor-link = Enlace de Flor
 
 
-master.menu.investorRecords = Inversiones
-master.menu.investor-records = Mostrar inversiones
-master.menu.investor-records.create = Crea una inversión
+master.menu.investor-records = Inversiones
+master.menu.investor-record.list = Mostrar inversiones
+master.menu.investor-record.create = Crea una inversión
 
 # master.menu.authenticated ###################################################
 
-master.menu.announcement = Anuncios
-master.menu.announcements = Mostrar anuncios
-master.menu.announcements.create = Crear Anuncio
+master.menu.announcements = Anuncios
+master.menu.announcements.admin = Anuncios (Administrador)
+master.menu.announcement.list = Mostrar anuncios
+master.menu.announcement.create = Crear Anuncio
 
-master.menu.offer = Ofertas
-master.menu.offers = Mostrar ofertas
+master.menu.offers = Ofertas
+master.menu.offer.list = Mostrar ofertas
+master.menu.offer.create = Crea una oferta 
 
-master.menu.request_ = Solicitudes
-master.menu.requests_ = Mostrar Solicitudes
-master.menu.requests_.create = Crear Solicitudes
 
-master.menu.company-record = Registros de empresas
-master.menu.company-records = Mostrar registros de empresas
+master.menu.requests_ = Solicitudes
+master.menu.request_.list = Mostrar Solicitudes
+master.menu.request_.create = Crea Solicitud
 
-master.menu.challenge = Retos
-master.menu.challenges = Mostrar retos
+
+master.menu.company-records = Registros de empresas
+master.menu.company-record.list = Mostrar registros de empresas
+
+master.menu.challenges = Retos
+master.menu.challenge.list = Mostrar retos
 
 # master.menu.administrator ###################################################
 
@@ -76,24 +82,16 @@ master.menu.administrator = Administrador
 master.menu.administrator.user-accounts = Cuentas de usuario
 master.menu.administrator.shutdown = Parar el sistema
 
-master.menu.configuration = Configuración
-master.menu.configurations = Configuraciones
+master.menu.configurations = Configuración
+master.menu.configuration.list = Configuraciones
 
 # master.menu.provider ########################################################
 
 master.menu.provider = Proveedor
-master.menu.provider.favourite-link = Enlace favorito
-master.menu.provider.javi-link = Enlace de Javi
-master.menu.provider.angel-link = Enlace de Ángel
-master.menu.provider.flor-link = Enlace de Flor
 
 # master.menu.consumer ##########################################################
 
 master.menu.consumer = Consumidor
-master.menu.consumer.favourite-link = Enlace favorito
-master.menu.consumer.javi-link = Enlace de Javi
-master.menu.consumer.angel-link = Enlace de Ángel
-master.menu.consumer.flor-link = Enlace de Flor
 
 # master.menu.user-account ####################################################
 
@@ -124,7 +122,7 @@ master.company.text = \
 	plantilla para los estudiantes de la asignatura Diseño y Pruebas, en el Grado \
 	en Ingeniería del Software de la Universidad de Sevilla.
 master.company.name = Acme Jobs, Inc.
-master.company.address = Calle, número, Ciudad, Estado, País
+master.company.address = Calle, número, Sevilla, Sevilla, España
 master.company.phone = +000 123 456
 master.company.email = contact@acme.com
 
