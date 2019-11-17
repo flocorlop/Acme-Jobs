@@ -21,5 +21,9 @@ authenticated.offer.form.label.moneyMin = Pago Mínimo:
 authenticated.offer.form.label.moneyMax = Pago Máximo:
 
 authenticated.offer.form.button.create = Crear
+
+authenticated.offer.label.accept = Acepto 
+authenticated.offer.error.must-accept = Debe aceptar 
+
 authenticated.offer.form.button.return = Volver
 
