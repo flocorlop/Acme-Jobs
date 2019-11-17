@@ -74,6 +74,7 @@ master.menu.company-records = Registros de empresas
 master.menu.company-record.list = Mostrar registros de empresas
 master.menu.company-record.create = Crear registro de empresa
 
+
 master.menu.challenges = Retos
 master.menu.challenge.list = Mostrar retos
 

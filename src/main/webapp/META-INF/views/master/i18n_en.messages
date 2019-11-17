@@ -51,7 +51,8 @@ master.menu.anonymous.flor-link = Flor link
 
 master.menu.company-records = Company Record
 master.menu.company-record.list = List Company Records
-master.menu.company-record.create = Create company record
+master.menu.company-record.create = Create Company Record
+
 
 master.menu.investor-records = Investor Records
 master.menu.investor-record.list = List Investor Records

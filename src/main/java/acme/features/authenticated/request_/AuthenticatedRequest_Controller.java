@@ -21,6 +21,9 @@ public class AuthenticatedRequest_Controller extends AbstractController<Authenti
 	private AuthenticatedRequest_ListService	listService;
 
 	@Autowired
+	private AuthenticatedRequest_CreateService	createService;
+
+	@Autowired
 	private AuthenticatedRequest_ShowService	showService;
 
 
@@ -29,6 +32,8 @@ public class AuthenticatedRequest_Controller extends AbstractController<Authenti
 	@PostConstruct
 	private void initalise() {
 		super.addBasicCommand(BasicCommand.LIST, this.listService);
+		super.addBasicCommand(BasicCommand.CREATE, this.createService);
 		super.addBasicCommand(BasicCommand.SHOW, this.showService);
+
 	}
 }
