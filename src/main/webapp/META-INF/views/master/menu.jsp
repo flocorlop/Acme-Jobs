@@ -83,11 +83,17 @@
 			<acme:menu-suboption code="master.menu.announcement.list" action="/administrator/announcement/list" />
 			<acme:menu-suboption code="master.menu.announcement.create" action="/administrator/announcement/create" />
 		</acme:menu-option>
+		
+		<acme:menu-option code="master.menu.company-records" access="hasRole('Administrator')">
+			<acme:menu-suboption code="master.menu.company-record.list" action="/administrator/company-record/list" />
+			<acme:menu-suboption code="master.menu.company-record.create" action="/administrator/company-record/create" />
+		</acme:menu-option>
+		
 		<acme:menu-option code="master.menu.investor-records" access="hasRole('Administrator')">
 			<acme:menu-suboption code="master.menu.investor-record.list" action="/administrator/investor-record/list" />
 			<acme:menu-suboption code="master.menu.investor-record.create" action="/administrator/investor-record/create" />
 		</acme:menu-option>
-		
+
 		<acme:menu-option code="master.menu.administrator" access="hasRole('Administrator')">
 			<acme:menu-suboption code="master.menu.administrator.user-accounts" action="/administrator/user-account/list" />
 			<acme:menu-separator/>
@@ -127,4 +133,3 @@
 		<acme:menu-option code="master.menu.sign-out" action="/master/sign-out" access="isAuthenticated()" />
 	</acme:menu-right>
 </acme:menu-bar>
-

@@ -51,6 +51,8 @@ master.menu.anonymous.flor-link = Flor link
 
 master.menu.company-records = Company Record
 master.menu.company-record.list = List Company Records
+master.menu.company-record.create = Create Company Record
+
 
 master.menu.investor-records = Investor Records
 master.menu.investor-record.list = List Investor Records
@@ -136,4 +138,3 @@ master.license.text = \
 	"JSESSIONID" to identify your work session, "remember" to let you authenticate \
 	automatically for a maximum of 31 days, and "language" to store your language \
 	preferences. Additionally, we store an item called "returnStack" in your browser's \
-	
