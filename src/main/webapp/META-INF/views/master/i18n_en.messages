@@ -28,46 +28,51 @@ master.menu.sign-out = Sign out
 
 # master.menu.anonymous #######################################################
 
-master.menu.anonymous = Anonymous
-master.menu.shout = Shout
+master.menu.favouriteslinks = Favourites links
+
 master.menu.shouts = Shouts
-master.menu.create = Create Shout
-master.menu.bulletin = Bulletins
+master.menu.shout.list = List Shouts
+master.menu.shout.create = Create Shout
+
+master.menu.bulletins = Bulletins
 master.menu.caballero-bulletins = Caballero Bulletins
 master.menu.caballero-bulletin.create = Create Caballero Bulletin
 master.menu.correa-bulletins = Correa Bulletins
 master.menu.correa-bulletin.create = Create Correa Bulletin
-master.menu.morante-bulletins = MoranteBulletins
-master.menu.morante-bulletin.create =Create MoranteBulletin
+master.menu.morante-bulletins = Morante Bulletins
+master.menu.morante-bulletin.create = Create MoranteBulletin
 master.menu.granja-bulletins = Granja Bulletins
 master.menu.granja-bulletin.create = Create Granja Bulletin
+
 master.menu.anonymous.favourite-link = Favourite link
 master.menu.anonymous.javi-link = Javi link
 master.menu.anonymous.angel-link = Angel link
 master.menu.anonymous.flor-link = Flor link
 
-master.menu.company-record = Company record
-master.menu.company-records = Show company records
+master.menu.company-records = Company Record
+master.menu.company-record.list = List Company Records
 
-master.menu.investorRecords = Investor Records
-master.menu.investor-records = Show Investor Records
-master.menu.investor-records.create = Create Investor Records
+master.menu.investor-records = Investor Records
+master.menu.investor-record.list = List Investor Records
+master.menu.investor-record.create = Create Investor Records
 
 # master.menu.authenticated ###################################################
 
-master.menu.announcement = Announcements
-master.menu.announcements = Show announcements
-master.menu.announcements.create = Create Announcement
+master.menu.announcements = Announcements
+master.menu.announcements.admin = Announcements (Administrator)
+master.menu.announcement.list = List Announcements
+master.menu.announcement.create = Create Announcement
 
-master.menu.offer = Offers
-master.menu.offers = Show offers
-master.menu.offers.create = Create offers 
+master.menu.offers = Offers
+master.menu.offer.list = List Offers
+master.menu.offer.create = Create Offers 
 
-master.menu.request_ = Request
-master.menu.requests_ = Show Requests
+master.menu.requests_ = Request
+master.menu.request_.list = List Requests
+master.menu.request_.create = Create Request
 
-master.menu.challenge = Challenges
-master.menu.challenges = Show challenges
+master.menu.challenges = Challenges
+master.menu.challenge.list = List Challenges
 
 # master.menu.administrator ###################################################
 
@@ -75,24 +80,16 @@ master.menu.administrator = Administrator
 master.menu.administrator.user-accounts = User accounts
 master.menu.administrator.shutdown = Shut down
 
-master.menu.configuration = Configuration
-master.menu.configurations = Configurations
+master.menu.configurations = Configuration
+master.menu.configuration.list = List Configurations
 
 # master.menu.provider ########################################################
 
 master.menu.provider = Provider
-master.menu.provider.favourite-link = Favourite link
-master.menu.provider.javi-link = Javi link
-master.menu.provider.angel-link = Angel link
-master.menu.provider.flor-link = Flor link
 
 # master.menu.consumer ##########################################################
 
 master.menu.consumer = Consumer
-master.menu.consumer.favourite-link = Favourite link
-master.menu.consumer.javi-link = Javi link
-master.menu.consumer.angel-link = Angel link
-master.menu.consumer.flor-link = Flor link
 
 # master.menu.user-account ####################################################
 
@@ -123,7 +120,7 @@ master.company.text = \
 	starter project for the students of the Design and Testing subject of the \
 	Software Engineering Curriculum of the University of Sevilla.
 master.company.name = Acme Jobs, Inc.
-master.company.address = Number Street, City, State, Country
+master.company.address = Number Street, Sevilla, Sevilla, Spain
 master.company.phone = +000 123 456
 master.company.email = contact@acme.com
 
