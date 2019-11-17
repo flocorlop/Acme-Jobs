@@ -8,6 +8,7 @@ import org.springframework.stereotype.Service;
 
 import acme.entities.announcements.Announcement;
 import acme.framework.components.Errors;
+import acme.framework.components.HttpMethod;
 import acme.framework.components.Model;
 import acme.framework.components.Request;
 import acme.framework.entities.Administrator;
@@ -45,6 +46,12 @@ public class AdministratorAnnouncementCreateService implements AbstractCreateSer
 		assert model != null;
 
 		request.unbind(entity, model, "title", "text", "moreInfo");
+
+		if (request.isMethod(HttpMethod.GET)) {
+			model.setAttribute("accept", "false");
+		} else {
+			request.transfer(model, "accept");
+		}
 	}
 
 	@Override
@@ -60,6 +67,9 @@ public class AdministratorAnnouncementCreateService implements AbstractCreateSer
 		assert entity != null;
 		assert errors != null;
 
+		boolean isAccepted;
+		isAccepted = request.getModel().getBoolean("accept");
+		errors.state(request, isAccepted, "accept", "administrator.announcement.error.must-accept");
 	}
 
 	@Override

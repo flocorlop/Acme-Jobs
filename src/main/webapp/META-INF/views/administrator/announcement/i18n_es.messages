@@ -11,8 +11,6 @@
 administrator.announcement.list.label.moment = Momento
 administrator.announcement.list.label.title = Título
 
-
-
 administrator.announcement.form.label.moment = Momento:
 administrator.announcement.form.label.title = Título:
 administrator.announcement.form.label.moreInfo = Más Información:
@@ -24,5 +22,8 @@ administrator.announcement.form.button.create = Crear
 administrator.announcement.form.button.update = Actualizar
 administrator.announcement.form.button.delete = Borrar
 
+administrator.announcement.label.accept = Acepto
+administrator.announcement.error.must-accept = Debe aceptar
+ 
 administrator.announcement.form.button.return = Volver
 
