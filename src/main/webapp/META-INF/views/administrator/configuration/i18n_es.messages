@@ -14,5 +14,7 @@ administrator.configuration.list.label.title = Nombre
 administrator.configuration.form.label.title = Nombre
 administrator.configuration.form.label.spamThreshold = Límite Spam
 administrator.configuration.form.label.spamWords = Palabras Spam
+
+administrator.configuration.form.button.update = Actualizar
 administrator.configuration.form.button.return = Volver
 
