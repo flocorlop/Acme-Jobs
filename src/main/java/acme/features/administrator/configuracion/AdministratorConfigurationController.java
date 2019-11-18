@@ -24,6 +24,9 @@ public class AdministratorConfigurationController extends AbstractController<Adm
 	@Autowired
 	private AdministratorConfigurationShowService	showService;
 
+	@Autowired
+	private AdministratorConfigurationUpdateService	updateService;
+
 
 	//	Constructors -------------
 
@@ -31,5 +34,6 @@ public class AdministratorConfigurationController extends AbstractController<Adm
 	private void initalise() {
 		super.addBasicCommand(BasicCommand.LIST, this.listService);
 		super.addBasicCommand(BasicCommand.SHOW, this.showService);
+		super.addBasicCommand(BasicCommand.UPDATE, this.updateService);
 	}
 }
