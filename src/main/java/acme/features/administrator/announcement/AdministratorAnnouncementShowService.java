@@ -19,7 +19,7 @@ public class AdministratorAnnouncementShowService implements AbstractShowService
 	AdministratorAnnouncementRepository repository;
 
 
-	// AbstractListService<Authenticated, Announcemen> interface ------------
+	// AbstractListService<Authenticated, Announcement> interface ------------
 
 	@Override
 	public boolean authorise(final Request<Announcement> request) {
@@ -46,7 +46,7 @@ public class AdministratorAnnouncementShowService implements AbstractShowService
 		int id;
 
 		id = request.getModel().getInteger("id");
-		result = this.repository.findOneById(id);
+		result = this.repository.findOneAnnouncementById(id);
 
 		return result;
 	}

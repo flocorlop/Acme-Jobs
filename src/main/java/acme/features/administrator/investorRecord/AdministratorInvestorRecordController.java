@@ -26,8 +26,10 @@ public class AdministratorInvestorRecordController extends AbstractController<Ad
 
 	@Autowired
 	private AdministratorInvestorRecordCreateService	createService;
+
 	@Autowired
 	private AdministratorInvestorRecordUpdateService	updateService;
+
 	@Autowired
 	private AdministratorInvestorRecordDeleteService	deleteService;
 

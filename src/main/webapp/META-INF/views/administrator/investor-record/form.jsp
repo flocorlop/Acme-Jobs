@@ -30,6 +30,8 @@
 	code="administrator.investor-record.form.button.delete" 
 	action="/administrator/investor-record/delete"/>
 	
+	<acme:form-checkbox code="administrator.investor-record.label.accept" path="accept" />
+	
 
 	<acme:form-return code="administrator.investor-record.form.button.return"/>
 	</acme:form> 

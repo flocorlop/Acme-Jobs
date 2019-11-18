@@ -1,4 +1,3 @@
-
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <diagram program="umlet" version="14.3.0">
   <zoom_level>7</zoom_level>
@@ -401,7 +400,7 @@ has v</panel_attributes>
 + title: String {NotBlank}
 + ticker: String {NotBlank, Unique, Pattern}
 + moment: Date {Temporal(TIMESTAMP),past}
-+ deadline: Date {Temporal(TIMESTAMP),future}
++ deadline: Date {Temporal(TIMESTAMP)}
 + text: String {NotBlank}
 + moneyMin: Money 
 + moneyMax: Money </panel_attributes>
@@ -439,7 +438,7 @@ has v</panel_attributes>
     <panel_attributes>Challenge
 --
 + title: String {NotBlank}
-+ deadline: Date {Temporal(TIMESTAMP),future}
++ deadline: Date {Temporal(TIMESTAMP)}
 + description: String {NotBlank}
 + goalGold: String {NotBlank}
 + rewardGold: String {NotBlank}
@@ -476,11 +475,11 @@ has v</panel_attributes>
       <w>231</w>
       <h>98</h>
     </coordinates>
-    <panel_attributes>Solicitude
+    <panel_attributes>Request
 --
 +title: String{NotBlank}
 +moment: Date{Temporal(TIMESTAMP),past}
-+dateLimit:Date{Temporal(TIMESTAMP),future}
++dateLimit:Date{Temporal(TIMESTAMP)}
 +text: String{NotBlank}
 +money: Money
 +ticker: String{NotBlank,Unique,Pattern}</panel_attributes>
@@ -501,4 +500,3 @@ has v</panel_attributes>
     <additional_attributes/>
   </element>
 </diagram>
-
