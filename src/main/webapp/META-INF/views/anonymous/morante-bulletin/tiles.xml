@@ -25,5 +25,13 @@
 	<definition name="anonymous/morante-bulletin/list" extends="master">		
 		<put-attribute name="body" type="template" value="../anonymous/morante-bulletin/list.jsp" />
 	</definition>
+	
+	<definition name="authenticated/morante-bulletin/form" extends="master">		
+		<put-attribute name="body" type="template" value="../anonymous/morante-bulletin/form.jsp" />
+	</definition>
+
+	<definition name="authenticated/morante-bulletin/list" extends="master">		
+		<put-attribute name="body" type="template" value="../anonymous/morante-bulletin/list.jsp" />
+	</definition>
 
 </tiles-definitions> 

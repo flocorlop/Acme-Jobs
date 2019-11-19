@@ -25,5 +25,13 @@
 	<definition name="anonymous/granja-bulletin/list" extends="master">		
 		<put-attribute name="body" type="template" value="../anonymous/granja-bulletin/list.jsp" />
 	</definition>
+	
+	<definition name="authenticated/granja-bulletin/form" extends="master">		
+		<put-attribute name="body" type="template" value="../anonymous/granja-bulletin/form.jsp" />
+	</definition>
+
+	<definition name="authenticated/granja-bulletin/list" extends="master">		
+		<put-attribute name="body" type="template" value="../anonymous/granja-bulletin/list.jsp" />
+	</definition>
 
 </tiles-definitions> 
