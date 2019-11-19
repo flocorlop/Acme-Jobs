@@ -28,6 +28,9 @@ master.menu.sign-out = Sign out
 
 # master.menu.anonymous #######################################################
 
+master.menu.anonymous = Anonymous
+
+
 master.menu.favouriteslinks = Favourites links
 
 master.menu.shouts = Shouts
@@ -48,6 +51,7 @@ master.menu.anonymous.favourite-link = Favourite link
 master.menu.anonymous.javi-link = Javi link
 master.menu.anonymous.angel-link = Angel link
 master.menu.anonymous.flor-link = Flor link
+master.menu.anonymous.abel-link = Abel link
 
 master.menu.company-records = Company Record
 master.menu.company-record.list = List Company Records
@@ -59,6 +63,8 @@ master.menu.investor-record.list = List Investor Records
 master.menu.investor-record.create = Create Investor Records
 
 # master.menu.authenticated ###################################################
+
+master.menu.authenticated = Authenticated
 
 master.menu.announcements = Announcements
 master.menu.announcements.admin = Announcements (Administrator)
