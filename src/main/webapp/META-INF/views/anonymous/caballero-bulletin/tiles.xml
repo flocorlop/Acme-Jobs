@@ -25,5 +25,14 @@
 	<definition name="anonymous/caballero-bulletin/list" extends="master">		
 		<put-attribute name="body" type="template" value="../anonymous/caballero-bulletin/list.jsp" />
 	</definition>
+	
+	
+	<definition name="authenticated/caballero-bulletin/form" extends="master">		
+		<put-attribute name="body" type="template" value="../anonymous/caballero-bulletin/form.jsp" />
+	</definition>
+
+	<definition name="authenticated/caballero-bulletin/list" extends="master">		
+		<put-attribute name="body" type="template" value="../anonymous/caballero-bulletin/list.jsp" />
+	</definition>
 
 </tiles-definitions> 

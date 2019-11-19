@@ -57,8 +57,36 @@
 		</acme:menu-option>
 
 		<!---------------------------- AUTHENTICATED  ---------------------------------->
+		<acme:menu-option code="master.menu.shouts" access="isAuthenticated()">
+			<acme:menu-suboption code="master.menu.shout.list" action="/authenticated/shout/list" />
+			<acme:menu-suboption code="master.menu.shout.create" action="/authenticated/shout/create" />
+		</acme:menu-option>
+		
+		<acme:menu-option code="master.menu.bulletins" access="isAuthenticated()">
+			<acme:menu-suboption code="master.menu.caballero-bulletins" action="/authenticated/caballero-bulletin/list" />
+			<acme:menu-suboption code="master.menu.caballero-bulletin.create" action="/authenticated/caballero-bulletin/create" />
+			<acme:menu-separator />
+			<acme:menu-suboption code="master.menu.correa-bulletins" action="/authenticated/correa-bulletin/list" />
+			<acme:menu-suboption code="master.menu.correa-bulletin.create" action="/authenticated/correa-bulletin/create" />
+			<acme:menu-separator />
+			<acme:menu-suboption code="master.menu.granja-bulletins" action="/authenticated/granja-bulletin/list" />
+			<acme:menu-suboption code="master.menu.granja-bulletin.create" action="/authenticated/granja-bulletin/create" />
+			<acme:menu-separator />
+			<acme:menu-suboption code="master.menu.morante-bulletins" action="/authenticated/morante-bulletin/list" />
+			<acme:menu-suboption code="master.menu.morante-bulletin.create" action="/authenticated/morante-bulletin/create" />
+		</acme:menu-option>
+		
 		<acme:menu-option code="master.menu.announcements" access="isAuthenticated()">
 			<acme:menu-suboption code="master.menu.announcement.list" action="/authenticated/announcement/list" />
+		</acme:menu-option>
+		
+		
+		<acme:menu-option code="master.menu.company-records" access="isAuthenticated()">
+			<acme:menu-suboption code="master.menu.company-record.list" action="/authenticated/company-record/list" />
+		</acme:menu-option>
+
+		<acme:menu-option code="master.menu.investor-records" access="isAuthenticated()">
+			<acme:menu-suboption code="master.menu.investor-record.list" action="/authenticated/investor-record/list" />
 		</acme:menu-option>
 
 		<acme:menu-option code="master.menu.offers" access="isAuthenticated()">

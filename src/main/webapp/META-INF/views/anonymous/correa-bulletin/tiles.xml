@@ -25,5 +25,13 @@
 	<definition name="anonymous/correa-bulletin/list" extends="master">		
 		<put-attribute name="body" type="template" value="../anonymous/correa-bulletin/list.jsp" />
 	</definition>
+	
+	<definition name="authenticated/correa-bulletin/form" extends="master">		
+		<put-attribute name="body" type="template" value="../anonymous/correa-bulletin/form.jsp" />
+	</definition>
+
+	<definition name="authenticated/correa-bulletin/list" extends="master">		
+		<put-attribute name="body" type="template" value="../anonymous/correa-bulletin/list.jsp" />
+	</definition>
 
 </tiles-definitions> 

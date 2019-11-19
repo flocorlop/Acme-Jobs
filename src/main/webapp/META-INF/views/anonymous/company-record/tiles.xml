@@ -25,6 +25,14 @@
 	<definition name="anonymous/company-record/form" extends="master">		
 		<put-attribute name="body" type="template" value="../anonymous/company-record/form.jsp" />
 	</definition>
+	
+	<definition name="authenticated/company-record/list" extends="master">		
+		<put-attribute name="body" type="template" value="../anonymous/company-record/list.jsp" />
+	</definition>
+	
+	<definition name="authenticated/company-record/form" extends="master">		
+		<put-attribute name="body" type="template" value="../anonymous/company-record/form.jsp" />
+	</definition>
 
 </tiles-definitions> 
 
