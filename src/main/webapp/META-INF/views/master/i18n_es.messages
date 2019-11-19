@@ -27,7 +27,11 @@ master.menu.sign-in = Entrar
 master.menu.sign-out = Salir
 
 # master.menu.anonymous #######################################################
+master.menu.anonymous = Anónimo
+
+
 master.menu.favouriteslinks = Links favoritos
+
 
 master.menu.shouts = Shouts
 master.menu.shout.list = Mostrar Shouts
@@ -47,6 +51,7 @@ master.menu.anonymous.favourite-link = Enlace favorito
 master.menu.anonymous.javi-link = Enlace de Javi
 master.menu.anonymous.angel-link = Enlace de Ángel
 master.menu.anonymous.flor-link = Enlace de Flor
+master.menu.anonymous.abel-link = Enlace de Abel
 
 
 master.menu.investor-records = Inversiones
@@ -54,6 +59,9 @@ master.menu.investor-record.list = Mostrar inversiones
 master.menu.investor-record.create = Crea una inversión
 
 # master.menu.authenticated ###################################################
+
+master.menu.authenticated = Autenticado
+
 
 master.menu.announcements = Anuncios
 master.menu.announcements.admin = Anuncios (Administrador)
