@@ -424,7 +424,7 @@ has v</panel_attributes>
 + phone: String{Pattern, NotBlank}
 + email: String{NotBlank}
 + incorporated: Boolean{NotBlank}
-+ stars: Integer</panel_attributes>
++ stars: Integer {Range(0,5), NotNull}</panel_attributes>
     <additional_attributes/>
   </element>
   <element>

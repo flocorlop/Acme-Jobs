@@ -155,7 +155,6 @@
     create table `request_` (
        `id` integer not null,
         `version` integer not null,
-        `accept` bit,
         `date_limit` datetime(6),
         `moment` datetime(6),
         `money_amount` double precision,
