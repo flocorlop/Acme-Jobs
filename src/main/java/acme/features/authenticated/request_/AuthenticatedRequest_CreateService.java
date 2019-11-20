@@ -8,9 +8,9 @@ import org.springframework.stereotype.Service;
 
 import acme.entities.requests_.Request_;
 import acme.framework.components.Errors;
+import acme.framework.components.HttpMethod;
 import acme.framework.components.Model;
 import acme.framework.components.Request;
-import acme.framework.datatypes.Money;
 import acme.framework.entities.Authenticated;
 import acme.framework.services.AbstractCreateService;
 
@@ -49,6 +49,11 @@ public class AuthenticatedRequest_CreateService implements AbstractCreateService
 
 		request.unbind(entity, model, "title", "dateLimit", "text", "money", "ticker");
 
+		if (request.isMethod(HttpMethod.GET)) {
+			model.setAttribute("accept", "false");
+		} else {
+			request.transfer(model, "accept");
+		}
 	}
 
 	@Override
@@ -64,9 +69,8 @@ public class AuthenticatedRequest_CreateService implements AbstractCreateService
 		assert entity != null;
 		assert errors != null;
 
-		//Si no se marca lo da como nulo y esto da un fallo
-		//boolean isAccepted = request.getModel().getBoolean("accept");
-		//errors.state(request, isAccepted, "accept", "authenticated.request_.error.must-accept");
+		boolean isAccepted = request.getModel().getBoolean("accept");
+		errors.state(request, isAccepted, "accept", "authenticated.request_.error.must-accept");
 
 	}
 
@@ -78,20 +82,20 @@ public class AuthenticatedRequest_CreateService implements AbstractCreateService
 
 		//"title", "DateLimit", "ticker", "money", "text"
 
-		String title = entity.getTitle();
-		entity.setTitle(title);
-
-		Date dateLimit = entity.getDateLimit();
-		entity.setDateLimit(dateLimit);
-
-		String ticker = entity.getTicker();
-		entity.setTicker(ticker);
-
-		Money money = entity.getMoney();
-		entity.setMoney(money);
-
-		String text = entity.getText();
-		entity.setText(text);
+		//		String title = entity.getTitle();
+		//		entity.setTitle(title);
+		//
+		//		Date dateLimit = entity.getDateLimit();
+		//		entity.setDateLimit(dateLimit);
+		//
+		//		String ticker = entity.getTicker();
+		//		entity.setTicker(ticker);
+		//
+		//		Money money = entity.getMoney();
+		//		entity.setMoney(money);
+		//
+		//		String text = entity.getText();
+		//		entity.setText(text);
 
 		this.repository.save(entity);
 	}
