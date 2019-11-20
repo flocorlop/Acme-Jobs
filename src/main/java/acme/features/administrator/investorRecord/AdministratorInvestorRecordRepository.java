@@ -18,4 +18,7 @@ public interface AdministratorInvestorRecordRepository extends AbstractRepositor
 	@Query("select i from InvestorRecord i where i.id = ?1")
 	InvestorRecord findOneById(int id);
 
+	@Query("select i from InvestorRecord i where i.name = ?1")
+	InvestorRecord findOneByName(String name);
+
 }

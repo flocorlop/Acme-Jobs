@@ -4,6 +4,8 @@ package acme.entities.challenges;
 import java.util.Date;
 
 import javax.persistence.Entity;
+import javax.persistence.Index;
+import javax.persistence.Table;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
 import javax.persistence.Transient;
@@ -16,6 +18,9 @@ import lombok.Setter;
 @Entity
 @Getter
 @Setter
+@Table(indexes = {
+	@Index(columnList = "deadline")
+})
 public class Challenge extends DomainEntity {
 
 	//serialisation identifier
