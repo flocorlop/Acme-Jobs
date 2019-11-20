@@ -1,7 +1,9 @@
 
 package acme.features.authenticated.offer;
 
+import java.util.Calendar;
 import java.util.Date;
+import java.util.GregorianCalendar;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -78,6 +80,7 @@ public class AuthenticatedOfferCreateService implements AbstractCreateService<Au
 		isAccepted = request.getModel().getBoolean("accept");
 		errors.state(request, isAccepted, "accept", "authenticated.offer.error.must-accept");
 
+
 		if (entity.getMoneyMax() != null) {
 			String s = entity.getMoneyMax().getCurrency();
 			boolean isAccepted2 = s.equals("EUR") || s.equals("€");
@@ -88,6 +91,19 @@ public class AuthenticatedOfferCreateService implements AbstractCreateService<Au
 			boolean isAccepted3 = s.equals("EUR") || s.equals("€");
 			errors.state(request, isAccepted3, "moneyMin", "authenticated.request_.error.moneyMin");
 		}
+
+		Calendar calendar;
+		Date minimumDeadline;
+		Offer existing;
+
+		if (!errors.hasErrors("deadline")) {
+			calendar = new GregorianCalendar();
+			calendar.add(Calendar.DAY_OF_MONTH, 1);
+			minimumDeadline = calendar.getTime();
+			errors.state(request, entity.getDeadline().after(minimumDeadline), "deadline", "authenticated.offer.error.deadline-future");
+		}
+
+
 	}
 
 	@Override
