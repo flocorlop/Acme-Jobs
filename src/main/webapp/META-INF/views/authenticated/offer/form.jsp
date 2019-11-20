@@ -4,17 +4,17 @@
 <%@taglib prefix="acme" tagdir="/WEB-INF/tags"%>
 
 <acme:form>
-	<acme:form-textbox code="authenticated.offer.form.label.ticker" path="ticker" />
+	<acme:form-textbox placeholder="OABCD-12345" code="authenticated.offer.form.label.ticker" path="ticker" />
 	<acme:form-textbox code="authenticated.offer.form.label.title" path="title" />
 
 	<jstl:if test="${command != 'create'}">
 		<acme:form-moment code="authenticated.offer.form.label.moment" path="moment" readonly="true" />
 	</jstl:if>
 
-	<acme:form-textbox code="authenticated.offer.form.label.deadline" path="deadline" />
+	<acme:form-moment code="authenticated.offer.form.label.deadline" path="deadline" />
 	<acme:form-textarea code="authenticated.offer.form.label.text" path="text" />
-	<acme:form-textbox code="authenticated.offer.form.label.moneyMin" path="moneyMin" />
-	<acme:form-textbox code="authenticated.offer.form.label.moneyMax" path="moneyMax" />
+	<acme:form-money code="authenticated.offer.form.label.moneyMin" path="moneyMin" />
+	<acme:form-money code="authenticated.offer.form.label.moneyMax" path="moneyMax" />
 
 	<acme:form-checkbox code="authenticated.offer.label.accept" path="accept" />
 

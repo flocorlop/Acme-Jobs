@@ -10,10 +10,10 @@
 		<acme:form-moment code="authenticated.request_.form.label.moment" path="moment" readonly="true" />
 	</jstl:if>
 	
-	<acme:form-textbox code="authenticated.request_.form.label.dateLimit" path="dateLimit"/>
+	<acme:form-moment code="authenticated.request_.form.label.dateLimit" path="dateLimit"/>
 	<acme:form-textarea code="authenticated.request_.form.label.text" path="text"/>
-	<acme:form-textbox code="authenticated.request_.form.label.money" path="money"/>
-	<acme:form-textbox code="authenticated.request_.form.label.ticker" path="ticker"/>
+	<acme:form-money code="authenticated.request_.form.label.money" path="money"/>
+	<acme:form-textbox placeholder="RABCD-12345" code="authenticated.request_.form.label.ticker" path="ticker"/>
 	
 	<acme:form-checkbox code="anonymous.user-account.label.accept" path="accept"/>
 	

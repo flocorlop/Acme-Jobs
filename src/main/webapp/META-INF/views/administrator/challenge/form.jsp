@@ -5,7 +5,7 @@
 
 <acme:form>
 	<acme:form-textbox code="administrator.challenge.form.label.title" path="title"/>
-	<acme:form-textbox code="administrator.challenge.form.label.deadline" path="deadline"/>
+	<acme:form-moment code="administrator.challenge.form.label.deadline" path="deadline"/>
 	<acme:form-textarea code="administrator.challenge.form.label.description" path="description"/>
 	<acme:form-textbox code="administrator.challenge.form.label.gold" path="gold"/>
 	<acme:form-textbox code="administrator.challenge.form.label.silver" path="silver"/>
@@ -21,6 +21,7 @@
 	action="/administrator/challenge/update"/>
 	<acme:form-submit test="${command == 'delete'}" code="administrator.challenge.form.button.delete" 
 	action="/administrator/challenge/delete"/>
+	
 	<acme:form-return code="administrator.challenge.form.button.return"/>
 	</acme:form> 
 
