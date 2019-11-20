@@ -96,7 +96,7 @@ master.menu.configurations = Configuración
 master.menu.configuration.list = Configuraciones
 
 master.menu.challenge.list = Listar Retos
-master.menu.challenge.form = Mostrar Retos
+master.menu.challenge.form = Crear Retos
 
 # master.menu.provider ########################################################
 
