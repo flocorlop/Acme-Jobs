@@ -1,4 +1,3 @@
-
 package acme.features.authenticated.offer;
 
 import java.util.Calendar;
@@ -141,3 +140,4 @@ public class AuthenticatedOfferCreateService implements AbstractCreateService<Au
 	}
 
 }
+

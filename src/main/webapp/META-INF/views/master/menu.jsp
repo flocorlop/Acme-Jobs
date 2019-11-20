@@ -18,8 +18,10 @@
 
 <acme:menu-bar code="master.menu.home">
 	<acme:menu-left>
-		<!---------------------------- ANONYMOUS --------------------------------------->
-		 <acme:menu-option code="master.menu.anonymous" access="isAnonymous()">
+		
+		
+		
+		<acme:menu-option code="master.menu.bulletins" >
 			<acme:menu-suboption code="master.menu.anonymous.javi-link" action="https://www.youtube.com/?hl=es&gl=ES" />
 			<acme:menu-suboption code="master.menu.anonymous.angel-link" action="https://myanimelist.net/" />
 			<acme:menu-suboption code="master.menu.anonymous.flor-link" action="https://www.xataka.com/" />
@@ -27,55 +29,39 @@
 			<acme:menu-separator/>
 			<acme:menu-suboption code="master.menu.shout.list" action="/anonymous/shout/list" />
 			<acme:menu-suboption code="master.menu.shout.create" action="/anonymous/shout/create" />
-			
+			<acme:menu-separator/>
 			<acme:menu-suboption code="master.menu.caballero-bulletins" action="/anonymous/caballero-bulletin/list" />
 			<acme:menu-suboption code="master.menu.caballero-bulletin.create" action="/anonymous/caballero-bulletin/create" />
-			
+			<acme:menu-separator/>
 			<acme:menu-suboption code="master.menu.correa-bulletins" action="/anonymous/correa-bulletin/list" />
 			<acme:menu-suboption code="master.menu.correa-bulletin.create" action="/anonymous/correa-bulletin/create" />
-			
+			<acme:menu-separator/>
 			<acme:menu-suboption code="master.menu.granja-bulletins" action="/anonymous/granja-bulletin/list" />
 			<acme:menu-suboption code="master.menu.granja-bulletin.create" action="/anonymous/granja-bulletin/create" />
-			
+			<acme:menu-separator/>
 			<acme:menu-suboption code="master.menu.morante-bulletins" action="/anonymous/morante-bulletin/list" />
 			<acme:menu-suboption code="master.menu.morante-bulletin.create" action="/anonymous/morante-bulletin/create" />
-			<acme:menu-separator/>
+		</acme:menu-option>
+		
+		
+		<!---------------------------- ANONYMOUS --------------------------------------->
+		 <acme:menu-option code="master.menu.anonymous" access="isAnonymous()">
 			<acme:menu-suboption code="master.menu.company-record.list" action="/anonymous/company-record/list" />
 			<acme:menu-separator/>
 			<acme:menu-suboption code="master.menu.investor-record.list" action="/anonymous/investor-record/list" />
 			<acme:menu-separator/>
 			<acme:menu-suboption code="master.menu.announcement.list" action="/anonymous/announcement/list" />
-			<acme:menu-separator/>
 		</acme:menu-option>
 		
 		
 		
 		<!---------------------------- AUTHENTICATED  ---------------------------------->
 		<acme:menu-option code="master.menu.anonymous" access="isAuthenticated()">
-			<acme:menu-suboption code="master.menu.shout.list" action="/authenticated/shout/list" />
-			<acme:menu-suboption code="master.menu.shout.create" action="/authenticated/shout/create" />
-		    <acme:menu-separator/>
-		    <acme:menu-suboption code="master.menu.caballero-bulletins" action="/authenticated/caballero-bulletin/list" />
-			<acme:menu-suboption code="master.menu.caballero-bulletin.create" action="/authenticated/caballero-bulletin/create" />
-			
-			<acme:menu-suboption code="master.menu.correa-bulletins" action="/authenticated/correa-bulletin/list" />
-			<acme:menu-suboption code="master.menu.correa-bulletin.create" action="/authenticated/correa-bulletin/create" />
-			
-			<acme:menu-suboption code="master.menu.granja-bulletins" action="/authenticated/granja-bulletin/list" />
-			<acme:menu-suboption code="master.menu.granja-bulletin.create" action="/authenticated/granja-bulletin/create" />
-			
-			<acme:menu-suboption code="master.menu.morante-bulletins" action="/authenticated/morante-bulletin/list" />
-			<acme:menu-suboption code="master.menu.morante-bulletin.create" action="/authenticated/morante-bulletin/create" />
-		    <acme:menu-separator/>
 		    <acme:menu-suboption code="master.menu.announcement.list" action="/authenticated/announcement/list" />
 		    <acme:menu-separator/>
 		    <acme:menu-suboption code="master.menu.company-record.list" action="/authenticated/company-record/list" />
 		    <acme:menu-separator/>
-		    <acme:menu-suboption code="master.menu.investor-record.list" action="/authenticated/investor-record/list" />
-		    <acme:menu-separator/>
-		    <acme:menu-suboption code="master.menu.configuration.list" action="/administrator/configuration/list" />
-		    <acme:menu-separator/> 
-		
+		    <acme:menu-suboption code="master.menu.investor-record.list" action="/authenticated/investor-record/list" />		  
 		</acme:menu-option>
 		
 		<acme:menu-option code="master.menu.authenticated" access="isAuthenticated()">
@@ -123,6 +109,8 @@
 			<acme:menu-suboption code="master.menu.challenge.list" action="/administrator/challenge/list"/>
 			<acme:menu-suboption code="master.menu.challenge.form" action="/administrator/challenge/create"/>
 			<acme:menu-separator/>
+			<acme:menu-suboption code="master.menu.configuration.list" action="/administrator/configuration/list" />
+		
 		</acme:menu-option>
 
 	

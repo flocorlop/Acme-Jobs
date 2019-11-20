@@ -34,6 +34,7 @@ public class Request_ extends DomainEntity {
 	@Past
 	private Date				moment;
 
+	@NotNull
 	@Temporal(TemporalType.TIMESTAMP)
 	private Date				dateLimit;
 
