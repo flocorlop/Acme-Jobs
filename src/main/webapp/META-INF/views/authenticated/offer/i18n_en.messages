@@ -26,5 +26,10 @@ authenticated.offer.form.button.create = Create
 authenticated.offer.form.button.return = Return
 
 authenticated.offer.error.must-accept = Must accept 
+
+authenticated.offer.error.moneyMin = invalid currency
+authenticated.offer.error.moneyMax = invalid currency
+
 authenticated.offer.error.deadline-future = Deadline should be at least 1 day in the future from this moment 
+
 

@@ -41,6 +41,7 @@ public class Request_ extends DomainEntity {
 	@NotBlank
 	private String				text;
 
+	@NotNull
 	private Money				money;
 
 	@NotBlank

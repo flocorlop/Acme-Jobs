@@ -1,4 +1,3 @@
-
 package acme.features.authenticated.offer;
 
 import java.util.Calendar;
@@ -80,8 +79,21 @@ public class AuthenticatedOfferCreateService implements AbstractCreateService<Au
 		isAccepted = request.getModel().getBoolean("accept");
 		errors.state(request, isAccepted, "accept", "authenticated.offer.error.must-accept");
 
+
+		if (entity.getMoneyMax() != null) {
+			String s = entity.getMoneyMax().getCurrency();
+			boolean isAccepted2 = s.equals("EUR") || s.equals("€");
+			errors.state(request, isAccepted2, "moneyMax", "authenticated.request_.error.moneyMax");
+		}
+		if (entity.getMoneyMin() != null) {
+			String s = entity.getMoneyMin().getCurrency();
+			boolean isAccepted3 = s.equals("EUR") || s.equals("€");
+			errors.state(request, isAccepted3, "moneyMin", "authenticated.request_.error.moneyMin");
+		}
+
 		Calendar calendar;
 		Date minimumDeadline;
+		Offer existing;
 
 		if (!errors.hasErrors("deadline")) {
 			calendar = new GregorianCalendar();
@@ -89,6 +101,7 @@ public class AuthenticatedOfferCreateService implements AbstractCreateService<Au
 			minimumDeadline = calendar.getTime();
 			errors.state(request, entity.getDeadline().after(minimumDeadline), "deadline", "authenticated.offer.error.deadline-future");
 		}
+
 
 	}
 
@@ -127,3 +140,4 @@ public class AuthenticatedOfferCreateService implements AbstractCreateService<Au
 	}
 
 }
+
