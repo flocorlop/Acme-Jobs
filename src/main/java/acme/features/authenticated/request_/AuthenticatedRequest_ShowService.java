@@ -18,7 +18,7 @@ public class AuthenticatedRequest_ShowService implements AbstractShowService<Aut
 	AuthenticatedRequest_Repository repository;
 
 
-	// AbstractListService<Authenticated, Solicitude> interface ------------
+	// AbstractListService<Authenticated, Request_> interface ------------
 
 	@Override
 	public boolean authorise(final Request<Request_> request) {
