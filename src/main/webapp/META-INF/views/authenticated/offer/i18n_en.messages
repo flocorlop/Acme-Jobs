@@ -26,4 +26,6 @@ authenticated.offer.form.button.create = Create
 authenticated.offer.form.button.return = Return
 
 authenticated.offer.error.must-accept = Must accept 
+authenticated.request_.error.moneyMin = invalid currency
+authenticated.request_.error.moneyMax = invalid currency
 

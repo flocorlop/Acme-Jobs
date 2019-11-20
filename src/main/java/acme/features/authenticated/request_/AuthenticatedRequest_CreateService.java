@@ -72,6 +72,12 @@ public class AuthenticatedRequest_CreateService implements AbstractCreateService
 		boolean isAccepted = request.getModel().getBoolean("accept");
 		errors.state(request, isAccepted, "accept", "authenticated.request_.error.must-accept");
 
+		if (entity.getMoney() != null) {
+			String s = entity.getMoney().getCurrency();
+			boolean isAccepted2 = s.equals("EUR") || s.equals("€");
+			errors.state(request, isAccepted2, "money", "authenticated.request_.error.money");
+		}
+
 	}
 
 	@Override

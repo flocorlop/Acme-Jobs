@@ -24,6 +24,8 @@ authenticated.offer.form.button.create = Crear
 
 authenticated.offer.label.accept = Acepto 
 authenticated.offer.error.must-accept = Debe aceptar 
+authenticated.request_.error.moneyMin = Moneda no valida
+authenticated.request_.error.moneyMax = Moneda no valida
 
 authenticated.offer.form.button.return = Volver
 

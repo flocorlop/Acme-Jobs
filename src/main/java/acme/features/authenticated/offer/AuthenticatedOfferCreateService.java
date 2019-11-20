@@ -77,6 +77,17 @@ public class AuthenticatedOfferCreateService implements AbstractCreateService<Au
 		boolean isAccepted;
 		isAccepted = request.getModel().getBoolean("accept");
 		errors.state(request, isAccepted, "accept", "authenticated.offer.error.must-accept");
+
+		if (entity.getMoneyMax() != null) {
+			String s = entity.getMoneyMax().getCurrency();
+			boolean isAccepted2 = s.equals("EUR") || s.equals("€");
+			errors.state(request, isAccepted2, "moneyMax", "authenticated.request_.error.moneyMax");
+		}
+		if (entity.getMoneyMin() != null) {
+			String s = entity.getMoneyMin().getCurrency();
+			boolean isAccepted3 = s.equals("EUR") || s.equals("€");
+			errors.state(request, isAccepted3, "moneyMin", "authenticated.request_.error.moneyMin");
+		}
 	}
 
 	@Override
