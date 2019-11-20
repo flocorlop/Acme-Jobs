@@ -228,7 +228,7 @@
 
 	<!-- CompanyRecords -->
 	<bean id="CompanyRecord01" class="acme.entities.companyRecords.CompanyRecord">
-		<property name="name" value="Google" />
+		<property name="name" value="Google inc" />
 		<property name="sector" value="Tecnológico" />
 		<property name="ceo" value="Sundar Pichai" />
 		<property name="activities" value="Desarrollo y mantenimiento de aplicaciones web" />
@@ -240,7 +240,7 @@
 	</bean>
 
 	<bean id="CompanyRecord02" class="acme.entities.companyRecords.CompanyRecord">
-		<property name="name" value="Intel" />
+		<property name="name" value="Intel inc" />
 		<property name="sector" value="Tecnológico" />
 		<property name="ceo" value="Bob Swan" />
 		<property name="activities" value="Desarrollo y producción de hardware" />
@@ -307,7 +307,6 @@
 <property name= "text" value="lfdksjghd"/>
 <property name= "money" value="€ 1000"/>
 <property name= "ticker" value="RXXXX-99109"/>
-<property name= "accept" value="true"/>
 </bean>
 
 <bean id="request02" class="acme.entities.requests_.Request_">
@@ -317,7 +316,6 @@
 <property name= "text" value="lfdksjghdfdgf"/>
 <property name= "money" value="€ 750"/>
 <property name= "ticker" value="RXXXX-99119"/>
-<property name= "accept" value="true"/>
 </bean>
     
 	<!-- Configuration -->
