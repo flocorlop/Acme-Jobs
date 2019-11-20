@@ -69,6 +69,22 @@ public class AdministratorCompanyRecordUpdateService implements AbstractUpdateSe
 		assert request != null;
 		assert entity != null;
 
+		String name = entity.getName();
+		String[] palabras = name.split(" ");
+
+		if (name.endsWith(" inc") && entity.getIncorporated() == false) {
+			palabras[palabras.length - 1] = "";
+			name = "";
+			for (String s : palabras) {
+				name = name + s;
+			}
+		} else if (!name.endsWith(" inc") && entity.getIncorporated() == true) {
+			name = name + " inc";
+
+		}
+
+		entity.setName(name);
+
 		this.repository.save(entity);
 
 	}
