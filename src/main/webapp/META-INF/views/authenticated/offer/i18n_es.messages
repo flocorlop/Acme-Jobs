@@ -24,6 +24,7 @@ authenticated.offer.form.button.create = Crear
 
 authenticated.offer.label.accept = Acepto 
 authenticated.offer.error.must-accept = Debe aceptar 
+authenticated.offer.error.deadline-future = La fecha límite debe de ser en un día al menos desde este momento
 
 authenticated.offer.form.button.return = Volver
 
