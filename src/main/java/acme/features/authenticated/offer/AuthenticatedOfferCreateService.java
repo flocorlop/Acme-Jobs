@@ -1,7 +1,9 @@
 
 package acme.features.authenticated.offer;
 
+import java.util.Calendar;
 import java.util.Date;
+import java.util.GregorianCalendar;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -77,6 +79,18 @@ public class AuthenticatedOfferCreateService implements AbstractCreateService<Au
 		boolean isAccepted;
 		isAccepted = request.getModel().getBoolean("accept");
 		errors.state(request, isAccepted, "accept", "authenticated.offer.error.must-accept");
+
+		Calendar calendar;
+		Date minimumDeadline;
+		Offer existing;
+
+		if (!errors.hasErrors("deadline")) {
+			calendar = new GregorianCalendar();
+			calendar.add(Calendar.DAY_OF_MONTH, 1);
+			minimumDeadline = calendar.getTime();
+			errors.state(request, entity.getDeadline().after(minimumDeadline), "deadline", "authenticated.offer.error.deadline-future");
+		}
+
 	}
 
 	@Override
