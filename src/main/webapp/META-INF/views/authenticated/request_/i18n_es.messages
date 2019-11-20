@@ -26,4 +26,5 @@ authenticated.request_.list.label.money = Dinero
 authenticated.request_.list.label.ticker = Ticker
 
 authenticated.request_.error.must-accept = Debe aceptar 
+authenticated.request_.error.dateLimit-future = La fecha límite debe de ser en un día al menos desde este momento
 

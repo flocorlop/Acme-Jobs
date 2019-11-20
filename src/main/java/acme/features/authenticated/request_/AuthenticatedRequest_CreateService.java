@@ -1,7 +1,9 @@
 
 package acme.features.authenticated.request_;
 
+import java.util.Calendar;
 import java.util.Date;
+import java.util.GregorianCalendar;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -71,6 +73,16 @@ public class AuthenticatedRequest_CreateService implements AbstractCreateService
 
 		boolean isAccepted = request.getModel().getBoolean("accept");
 		errors.state(request, isAccepted, "accept", "authenticated.request_.error.must-accept");
+
+		Calendar calendar;
+		Date minimumDeadline;
+
+		if (!errors.hasErrors("dateLimit")) {
+			calendar = new GregorianCalendar();
+			calendar.add(Calendar.DAY_OF_MONTH, 1);
+			minimumDeadline = calendar.getTime();
+			errors.state(request, entity.getDateLimit().after(minimumDeadline), "dateLimit", "authenticated.request_.error.dateLimit-future");
+		}
 
 	}
 

@@ -26,3 +26,4 @@ authenticated.request_.list.label.money = Money
 authenticated.request_.list.label.ticker = Ticker
 
 authenticated.request_.error.must-accept = Must accept 
+authenticated.request_.error.dateLimit-future = Deadline should be at least 1 day in the future from this moment
